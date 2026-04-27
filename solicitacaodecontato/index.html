@@ -1,1 +1,147 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solicitação de Contato | Solumartin</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8fafc;
+    color:#1f2933;
+}
+
+header{
+    background:#0a3d62;
+    padding:25px;
+    text-align:center;
+}
+
+header img{
+    max-width:220px;
+}
+
+.container{
+    max-width:700px;
+    margin:40px auto;
+    background:#ffffff;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+h1{
+    color:#0a3d62;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    background:#f97316;
+    color:white;
+    border:none;
+    padding:16px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.95;
+}
+
+.whatsapp{
+    display:block;
+    margin-top:20px;
+    text-align:center;
+    background:#25d366;
+    color:white;
+    padding:14px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.voltar{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    color:#0a3d62;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="../logo.png" alt="Solumartin">
+</header>
+
+<div class="container">
+
+<h1>Solicitação de Contato</h1>
+
+<p>Preencha os dados abaixo e retornaremos rapidamente.</p>
+
+<form action="https://formsubmit.co/atendimento.solumartin@gmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="Nova Solicitação de Contato - Site">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text" name="Nome" placeholder="Seu nome" required>
+
+<input type="tel" name="Telefone" placeholder="Telefone / WhatsApp" required>
+
+<input type="email" name="Email" placeholder="Seu e-mail">
+
+<select name="Serviço">
+<option value="">Selecione o serviço</option>
+<option>Instalação</option>
+<option>Higienização</option>
+<option>Manutenção</option>
+<option>PMOC</option>
+<option>Venda</option>
+</select>
+
+<textarea name="Mensagem" rows="5" placeholder="Descreva sua necessidade"></textarea>
+
+<button type="submit">Enviar Solicitação</button>
+
+</form>
+
+<a class="whatsapp" href="https://wa.me/5554991674077" target="_blank">
+Falar no WhatsApp
+</a>
+
+<a class="voltar" href="../">
+← Voltar ao site
+</a>
+
+</div>
+
+</body>
+</html>
